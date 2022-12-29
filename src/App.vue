@@ -10,12 +10,12 @@ import Home from './components/Home.vue';
 
     <div class="wrapper">
       <!-- <HelloWorld msg="You did it!" /> -->
-      <Home data="sifat is here" msg="we are brothers"></Home>
+      
     </div>
   </header>
 
   <main>
-    
+    <Home data="sifat is here" msg="we are brothers"></Home>
   </main>
 </template>
 
