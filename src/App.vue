@@ -1,53 +1,19 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import Home from './components/Home.vue';
-import New from './components/New.vue';
-</script>
-
 <template>
-  <header>
-    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
-
-    <div class="wrapper">
-      <!-- <HelloWorld msg="You did it!" /> -->
-      
-    </div>
-  </header>
-
-  <main>
-    <Home data="sifat is here" msg="we are brothers"></Home>
-    <New></New>
-  </main>
+  <div id="App">
+    <h1>App</h1>
+    <DataBind></DataBind>
+  </div>
 </template>
+<script>
+import DataBind from './components/DataBind.vue';
 
-<style scoped>
-
-
-header {
-  line-height: 1.5;
+export default {
+  name: 'App',
+  components:{
+    DataBind
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
 }
+</script>
+<style>
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style> 
+</style>
