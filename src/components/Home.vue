@@ -6,8 +6,8 @@
         <button v-on:mouseover="hello('data')">Call hello function</button>
         <h2 v-if="show">Conditional Rendering in vue js</h2>
         <h2 v-else>else side</h2>
-        <button v-on:click="display">toogle</button>
-        
+        <button v-on:click="display">Toogle</button>
+        <br> <br>
         <table border="2px">
             <tr>
                 <td>id</td>

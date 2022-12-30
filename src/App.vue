@@ -2,6 +2,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import Home from './components/Home.vue';
+import New from './components/New.vue';
 </script>
 
 <template>
@@ -16,7 +17,7 @@ import Home from './components/Home.vue';
 
   <main>
     <Home data="sifat is here" msg="we are brothers"></Home>
-    
+    <New></New>
   </main>
 </template>
 
