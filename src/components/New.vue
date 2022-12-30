@@ -3,6 +3,7 @@
         <h1>This is a new component</h1>
         <h2>created by {{ name }}</h2>
         <button v-on:click="hello">click here</button>
+        <h2 v-bind:class="[checkDisplay?d:v]">Class with object</h2>
         <Users></Users>
         <Products></Products>
     </div>
@@ -18,7 +19,12 @@ export default {
     },
     data() {
         return {
-            name: 'sifat'
+            name: 'sifat',
+            colorName:'skyblue',
+            show:true,
+            d:'display',
+            v:'vueStyle',
+            checkDisplay:true
         }
     },
     methods: {
@@ -34,5 +40,12 @@ export default {
     background-color: rgb(161, 208, 247);
     height: 800px;
     text-align: center;
+}
+.vueStyle{
+    color: orange;
+}
+.display{
+    background-color: rgb(131, 131, 250);
+    padding: 5px;
 }
 </style>
