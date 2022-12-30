@@ -7,6 +7,20 @@
         <h2 v-if="show">Conditional Rendering in vue js</h2>
         <h2 v-else>else side</h2>
         <button v-on:click="display">toogle</button>
+        
+        <table border="2px">
+            <tr>
+                <td>id</td>
+                <td> name</td>
+                <td>&nbsp;&nbsp;&nbsp; email</td>
+            </tr>
+            <tr v-for="user in users" :key='user.id'>
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+            </tr>
+        </table>
+        
     </div>
 </template>
 <script>
@@ -31,6 +45,16 @@ export default{
         display()
         {
             this.show= !this.show
+        }
+    },
+    data(){
+        return{
+            users:[
+                {id:1, name: "Asif", email: 'asif@gmail.com'},
+                {id:2, name: "Iqbal", email: 'Iqbal@gmail.com'},
+                {id:3, name: "siam", email: 'siam@gmail.com'},
+                {id:4, name: "sifat", email: 'sifat@gmail.com'}
+            ]
         }
     }
 }

@@ -16,6 +16,7 @@ import Home from './components/Home.vue';
 
   <main>
     <Home data="sifat is here" msg="we are brothers"></Home>
+    
   </main>
 </template>
 
